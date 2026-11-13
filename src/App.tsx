@@ -18,7 +18,7 @@ import { TaxPage } from "./pages/TaxPage";
 export default function App() {
   return (
     <LanguageProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, "")}>
         <Header />
         <main>
           <Routes>
