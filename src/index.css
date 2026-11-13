@@ -1236,15 +1236,37 @@ button {
 }
 
 .contact-info p,
-.contact-info a {
+.contact-info a:not(.btn) {
   margin: 0;
   color: rgba(255, 255, 255, 0.72);
   line-height: 1.65;
   white-space: pre-line;
 }
 
-.contact-info a:hover {
+.contact-info a:not(.btn):hover {
   color: white;
+}
+
+.contact-info a.btn.btn-whatsapp,
+.btn-whatsapp {
+  background: #25d366;
+  color: #ffffff;
+  border-color: #25d366;
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.28);
+}
+
+.contact-info a.btn.btn-whatsapp:hover,
+.btn-whatsapp:hover {
+  background: #1ebe57;
+  color: #ffffff;
+  border-color: #1ebe57;
+}
+
+.btn-whatsapp svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
+  flex: 0 0 auto;
 }
 
 .contact-map {
