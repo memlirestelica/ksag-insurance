@@ -1,7 +1,6 @@
 import { useLanguage } from "../i18n/LanguageContext";
 
-const WHATSAPP =
-  "https://wa.me/41791234567?text=Hallo%20KSAG%20Insurance";
+const WHATSAPP = "https://wa.me/41791234567?text=Hallo%20KSAG%20Insurance";
 
 export function WhatsAppButton() {
   const { t } = useLanguage();

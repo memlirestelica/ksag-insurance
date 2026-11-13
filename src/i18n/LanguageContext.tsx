@@ -7,7 +7,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import { dictionaries, type Dictionary, type Lang } from "./translations";
+import { dictionaries, type Dictionary, type Lang } from "./index";
 
 type LanguageContextValue = {
   lang: Lang;
@@ -22,10 +22,6 @@ const STORAGE_KEY = "ksag-lang";
 function detectLang(): Lang {
   const saved = localStorage.getItem(STORAGE_KEY) as Lang | null;
   if (saved && saved in dictionaries) return saved;
-  const nav = navigator.language.toLowerCase();
-  if (nav.startsWith("fr")) return "fr";
-  if (nav.startsWith("it")) return "it";
-  if (nav.startsWith("en")) return "en";
   return "de";
 }
 

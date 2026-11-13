@@ -1,10 +1,9 @@
 import { useState, type FormEvent } from "react";
+import { ContactAside } from "../components/ContactAside";
+import { PageHero } from "../components/PageHero";
 import { useLanguage } from "../i18n/LanguageContext";
 
-const WHATSAPP =
-  "https://wa.me/41791234567?text=Hallo%20KSAG%20Insurance";
-
-export function Contact() {
+export function ContactPage() {
   const { t } = useLanguage();
   const [sent, setSent] = useState(false);
 
@@ -15,14 +14,12 @@ export function Contact() {
   };
 
   return (
-    <section className="section contact" id="contact">
-      <div className="container">
-        <p className="eyebrow">{t.contact.eyebrow}</p>
-        <h2 className="section-title">{t.contact.title}</h2>
-        <p className="section-sub">{t.contact.sub}</p>
-
-        <div className="contact-layout">
+    <>
+      <PageHero title={t.contact.title} lead={t.contact.lead} />
+      <section className="section contact" style={{ paddingTop: 0 }}>
+        <div className="container contact-layout">
           <form className="contact-form" onSubmit={onSubmit}>
+            <h2 className="mini-title">{t.contact.formTitle}</h2>
             <div className="form-row">
               <div className="field">
                 <label htmlFor="name">{t.contact.name}</label>
@@ -30,13 +27,7 @@ export function Contact() {
               </div>
               <div className="field">
                 <label htmlFor="email">{t.contact.email}</label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  required
-                  autoComplete="email"
-                />
+                <input id="email" name="email" type="email" required autoComplete="email" />
               </div>
             </div>
             <div className="form-row">
@@ -59,32 +50,14 @@ export function Contact() {
               <label htmlFor="message">{t.contact.message}</label>
               <textarea id="message" name="message" required />
             </div>
-            {sent && <p className="form-success">{t.contact.success}</p>}
+            {sent && <p className="form-success">{t.common.success}</p>}
             <button className="btn btn-primary" type="submit">
-              {t.contact.submit}
+              {t.common.send}
             </button>
           </form>
-
-          <aside className="contact-info">
-            <div>
-              <h3>{t.contact.infoTitle}</h3>
-              <p>{t.contact.address}</p>
-            </div>
-            <div>
-              <p>
-                <a href="mailto:hello@ksag-insurance.ch">hello@ksag-insurance.ch</a>
-              </p>
-              <p>
-                <a href="tel:+41441234567">+41 44 123 45 67</a>
-              </p>
-              <p>{t.contact.hours}</p>
-            </div>
-            <a className="btn btn-dark" href={WHATSAPP} target="_blank" rel="noreferrer">
-              {t.contact.whatsapp}
-            </a>
-          </aside>
+          <ContactAside />
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
