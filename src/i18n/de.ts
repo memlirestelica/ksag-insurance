@@ -18,10 +18,10 @@ export const de: Dictionary = {
     more: "Mehr",
     contactUs: "Kontakt aufnehmen",
     hoursLabel: "Öffnungszeiten",
-    hours: "Montag – Freitag: 08:00 – 17:00\nOder nach Vereinbarung.",
-    address: "Bahnhofstrasse 12\n8001 Zürich\nSchweiz",
-    phone: "+41 44 123 45 67",
-    email: "hello@ksag-insurance.ch",
+    hours: "Montag – Freitag: 08:00 – 18:00\nSamstag: 10:00 – 14:00",
+    address: "KSAG Insurance GmbH\nIndustriestrasse 14\n8305 Dietlikon\nSchweiz",
+    phone: "+41 79 138 53 36",
+    email: "info@ksaggmbh.ch",
     send: "Absenden",
     success: "Danke — Ihre Anfrage wurde übermittelt (Demo).",
     required: "Pflichtfeld",
@@ -39,7 +39,7 @@ export const de: Dictionary = {
     welcomeTitle: "Willkommen bei KSAG",
     welcomeBody: [
       "KSAG ist ein unabhängiger Versicherungsmakler und arbeitet mit führenden Versicherungsgesellschaften zusammen.",
-      "Als geprüfter und lizenzierter Anbieter unterstützen wir Sie bei der Suche nach der bedarfsgerechten Versicherungslösung.",
+      "Seit 2017 beraten wir von Dietlikon aus unabhängig zu Versicherungen, Vorsorge und Finanzplanung.",
       "Wir vergleichen Produkte, erklären Vor- und Nachteile und bleiben Ihr einziger kompetenter Ansprechpartner.",
     ],
     servicesTitle: "Dienstleistungen, die für Ruhe in Ihrem Leben sorgen",
@@ -63,11 +63,10 @@ export const de: Dictionary = {
   about: {
     title: "Über uns",
     lead:
-      "Unabhängiger Versicherungsmakler mit Fokus auf klare Beratung und langfristige Betreuung.",
+      "Unabhängige Beratung zu Versicherungen und Vorsorge in der Region Zürich.",
     body: [
-      "KSAG Insurance ist ein unabhängiger Versicherungsmakler. Führende Schweizer Gesellschaften zählen zu unseren Partnern. Als geprüfter und lizenzierter Anbieter unterstützen wir Privat- und Firmenkunden bei der Suche nach der passenden Lösung.",
-      "Wir vergleichen Versicherungsprodukte und beraten transparent zu Vor- und Nachteilen. So haben Sie einen Ansprechpartner für alle Verträge und behalten den Überblick.",
-      "Unsere Mitarbeitenden sind professionell ausgebildet, lizenziert und registriert gemäss den geltenden Versicherungsvorschriften — damit Qualität für Sie spürbar bleibt.",
+      "Die KSAG Insurance GmbH berät seit 2017 von Dietlikon aus unabhängig zu Versicherungen, Vorsorge und Finanzplanung.",
+      "Wir vergleichen Produkte für Privat- und Firmenkunden und erklären Vor- und Nachteile. So bleibt eine Ansprechperson für alle Verträge.",
     ],
     partnersTitle: "Was Partner über uns sagen",
     quotes: [
@@ -427,20 +426,20 @@ export const de: Dictionary = {
     privacy: "Datenschutz",
     terms: "AGB",
     imprint: "Impressum",
-    rights: "© 2026 KSAG Insurance. Alle Rechte vorbehalten.",
+    rights: "© 2026 KSAG Insurance GmbH. Alle Rechte vorbehalten.",
   },
   privacy: {
     title: "Datenschutzerklärung",
     lead:
       "Wir nehmen den Schutz Ihrer Personendaten ernst — gestützt auf das Schweizer Datenschutzgesetz (DSG/nDSG) und, soweit anwendbar, die EU-DSGVO.",
-    updated: "Stand: November 2026 (Demo-Inhalt)",
+    updated: "Stand: November 2026",
     disclaimer:
-      "Dieser Text ist eine Demo-Vorlage für KSAG Insurance und ersetzt keine anwaltliche Prüfung. Vor dem Live-Betrieb bitte rechtlich freigeben lassen.",
+      "Dieser Text beschreibt die Datenbearbeitung der KSAG Insurance GmbH und ersetzt keine anwaltliche Prüfung.",
     sections: [
       {
         title: "1. Verantwortliche Stelle",
         body:
-          "Verantwortlich für die Bearbeitung von Personendaten auf dieser Website ist KSAG Insurance (Demo), Bahnhofstrasse 12, 8001 Zürich, Schweiz. Kontakt: hello@ksag-insurance.ch, Tel. +41 44 123 45 67.",
+          "Verantwortlich für die Bearbeitung von Personendaten auf dieser Website ist die KSAG Insurance GmbH, Industriestrasse 14, 8305 Dietlikon, Schweiz. Kontakt: info@ksaggmbh.ch, Tel. +41 79 138 53 36.",
       },
       {
         title: "2. Welche Daten wir bearbeiten",
@@ -470,7 +469,7 @@ export const de: Dictionary = {
       {
         title: "5. Weitergabe an Dritte",
         body:
-          "Eine Weitergabe erfolgt nur, wenn dies für die genannten Zwecke erforderlich ist, Sie eingewilligt haben oder eine gesetzliche Pflicht besteht. Mögliche Empfänger (Demo): Hosting-Anbieter, IT-Dienstleister, Versicherer im Rahmen einer konkreten Vermittlung, sowie WhatsApp/Meta bei Nutzung des WhatsApp-Kanals.",
+          "Eine Weitergabe erfolgt nur, wenn dies für die genannten Zwecke erforderlich ist, Sie eingewilligt haben oder eine gesetzliche Pflicht besteht. Mögliche Empfänger: Hosting-Anbieter, IT-Dienstleister, Versicherer im Rahmen einer konkreten Vermittlung, sowie WhatsApp/Meta bei Nutzung des WhatsApp-Kanals.",
       },
       {
         title: "6. Speicherdauer",
@@ -508,34 +507,49 @@ export const de: Dictionary = {
       {
         title: "11. Kontakt zum Datenschutz",
         body:
-          "Für Fragen zum Datenschutz schreiben Sie an hello@ksag-insurance.ch oder nutzen Sie das Kontaktformular. Wir antworten in der Regel innerhalb weniger Werktage.",
+          "Für Fragen zum Datenschutz schreiben Sie an info@ksaggmbh.ch oder nutzen Sie das Kontaktformular. Wir antworten in der Regel innerhalb weniger Werktage.",
       },
     ],
   },
   imprint: {
     title: "Impressum",
-    lead: "Angaben gemäss schweizerischen Informationspflichten (Demo).",
+    lead: "Angaben zur KSAG Insurance GmbH.",
     sections: [
       {
         title: "Unternehmen",
         bullets: [
-          "KSAG Insurance (Demo)",
-          "Bahnhofstrasse 12",
-          "8001 Zürich",
+          "KSAG Insurance GmbH",
+          "Gesellschaft mit beschränkter Haftung (GmbH)",
+          "Industriestrasse 14",
+          "8305 Dietlikon",
           "Schweiz",
+        ],
+      },
+      {
+        title: "Handelsregister",
+        bullets: [
+          "UID: CHE-470.839.062",
+          "Handelsregister-Nr.: CH-020.4.060.855-4",
+          "Handelsregisteramt des Kantons Zürich",
+          "Eintrag: 1. März 2017",
+          "Stammkapital: CHF 20'000",
+        ],
+      },
+      {
+        title: "Geschäftsführung",
+        bullets: [
+          "Granit Delija, Gesellschafter und Vorsitzender der Geschäftsführung, Einzelunterschrift",
+          "Adem Delija, Geschäftsführer, Einzelunterschrift",
         ],
       },
       {
         title: "Kontakt",
         bullets: [
-          "E-Mail: hello@ksag-insurance.ch",
-          "Telefon: +41 44 123 45 67",
+          "E-Mail: info@ksaggmbh.ch",
+          "Telefon: +41 79 138 53 36",
+          "Montag–Freitag: 08:00–18:00",
+          "Samstag: 10:00–14:00",
         ],
-      },
-      {
-        title: "Hinweis",
-        body:
-          "Dies ist ein Demo-Impressum für Entwicklungszwecke. Vor dem Go-live bitte mit realen Firmendaten, UID und rechtlichen Angaben ersetzen.",
       },
     ],
   },

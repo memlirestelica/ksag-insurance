@@ -18,10 +18,10 @@ export const en: Dictionary = {
     more: "More",
     contactUs: "Get in touch",
     hoursLabel: "Opening hours",
-    hours: "Monday – Friday: 08:00 – 17:00\nOr by appointment.",
-    address: "Bahnhofstrasse 12\n8001 Zurich\nSwitzerland",
-    phone: "+41 44 123 45 67",
-    email: "hello@ksag-insurance.ch",
+    hours: "Monday – Friday: 08:00 – 18:00\nSaturday: 10:00 – 14:00",
+    address: "KSAG Insurance GmbH\nIndustriestrasse 14\n8305 Dietlikon\nSwitzerland",
+    phone: "+41 79 138 53 36",
+    email: "info@ksaggmbh.ch",
     send: "Send",
     success: "Thanks — your request was sent (demo).",
     required: "Required",
@@ -39,7 +39,7 @@ export const en: Dictionary = {
     welcomeTitle: "Welcome to KSAG",
     welcomeBody: [
       "KSAG is an independent insurance broker working with leading insurers.",
-      "As a licensed provider we help you find cover that matches your needs.",
+      "Since 2017 we have advised independently from Dietlikon on insurance, pensions and financial planning.",
       "We compare products, explain pros and cons, and remain your single point of contact.",
     ],
     servicesTitle: "Services that bring peace of mind",
@@ -60,11 +60,10 @@ export const en: Dictionary = {
   },
   about: {
     title: "About us",
-    lead: "Independent broker focused on clear advice and long-term care.",
+    lead: "Independent advice on insurance and pensions in the Zurich area.",
     body: [
-      "KSAG Insurance is an independent broker. Leading Swiss insurers are among our partners. As a licensed provider we support private and business clients.",
-      "We compare products and advise transparently so you keep one contact for all policies.",
-      "Our team is trained, licensed and registered under applicable insurance rules.",
+      "KSAG Insurance GmbH has advised independently on insurance, pensions and financial planning from Dietlikon since 2017.",
+      "We compare products for private and business clients and explain the trade-offs, so one person remains your contact for every policy.",
     ],
     partnersTitle: "What partners say",
     quotes: [
@@ -350,20 +349,20 @@ export const en: Dictionary = {
     privacy: "Privacy",
     terms: "Terms",
     imprint: "Imprint",
-    rights: "© 2026 KSAG Insurance. All rights reserved.",
+    rights: "© 2026 KSAG Insurance GmbH. All rights reserved.",
   },
   privacy: {
     title: "Privacy policy",
     lead:
       "We take personal data protection seriously — under the Swiss Federal Act on Data Protection (FADP/nDSG) and, where applicable, the EU GDPR.",
-    updated: "Last updated: November 2026 (demo content)",
+    updated: "Last updated: November 2026",
     disclaimer:
-      "This text is a demo template for KSAG Insurance and is not a substitute for legal advice. Have it reviewed before going live.",
+      "This text describes how KSAG Insurance GmbH handles personal data and is not a substitute for legal advice.",
     sections: [
       {
         title: "1. Controller",
         body:
-          "The controller for personal data on this website is KSAG Insurance (demo), Bahnhofstrasse 12, 8001 Zurich, Switzerland. Contact: hello@ksag-insurance.ch, phone +41 44 123 45 67.",
+          "The controller for personal data on this website is KSAG Insurance GmbH, Industriestrasse 14, 8305 Dietlikon, Switzerland. Contact: info@ksaggmbh.ch, phone +41 79 138 53 36.",
       },
       {
         title: "2. Data we process",
@@ -393,7 +392,7 @@ export const en: Dictionary = {
       {
         title: "5. Sharing with third parties",
         body:
-          "We share data only when needed for the stated purposes, with your consent, or where required by law. Possible recipients (demo): hosting/IT providers, insurers in a concrete brokerage case, and WhatsApp/Meta if you use that channel.",
+          "We share data only when needed for the stated purposes, with your consent, or where required by law. Possible recipients: hosting/IT providers, insurers in a concrete brokerage case, and WhatsApp/Meta if you use that channel.",
       },
       {
         title: "6. Retention",
@@ -431,34 +430,49 @@ export const en: Dictionary = {
       {
         title: "11. Privacy contact",
         body:
-          "For privacy questions email hello@ksag-insurance.ch or use the contact form. We usually reply within a few business days.",
+          "For privacy questions email info@ksaggmbh.ch or use the contact form. We usually reply within a few business days.",
       },
     ],
   },
   imprint: {
     title: "Imprint",
-    lead: "Company information (demo).",
+    lead: "Company information for KSAG Insurance GmbH.",
     sections: [
       {
         title: "Company",
         bullets: [
-          "KSAG Insurance (demo)",
-          "Bahnhofstrasse 12",
-          "8001 Zurich",
+          "KSAG Insurance GmbH",
+          "Limited liability company (GmbH)",
+          "Industriestrasse 14",
+          "8305 Dietlikon",
           "Switzerland",
+        ],
+      },
+      {
+        title: "Commercial register",
+        bullets: [
+          "UID: CHE-470.839.062",
+          "Commercial register no.: CH-020.4.060.855-4",
+          "Commercial Register of the Canton of Zurich",
+          "Entered: 1 March 2017",
+          "Share capital: CHF 20,000",
+        ],
+      },
+      {
+        title: "Management",
+        bullets: [
+          "Granit Delija, shareholder and chairman of the management, single signature",
+          "Adem Delija, managing director, single signature",
         ],
       },
       {
         title: "Contact",
         bullets: [
-          "Email: hello@ksag-insurance.ch",
-          "Phone: +41 44 123 45 67",
+          "Email: info@ksaggmbh.ch",
+          "Phone: +41 79 138 53 36",
+          "Monday–Friday: 08:00–18:00",
+          "Saturday: 10:00–14:00",
         ],
-      },
-      {
-        title: "Note",
-        body:
-          "This is a demo imprint for development. Replace with real company data and UID before go-live.",
       },
     ],
   },

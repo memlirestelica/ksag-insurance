@@ -18,10 +18,10 @@ export const it: Dictionary = {
     more: "Di più",
     contactUs: "Contattaci",
     hoursLabel: "Orari",
-    hours: "Lunedì – venerdì: 08:00 – 17:00\nO su appuntamento.",
-    address: "Bahnhofstrasse 12\n8001 Zurigo\nSvizzera",
-    phone: "+41 44 123 45 67",
-    email: "hello@ksag-insurance.ch",
+    hours: "Lunedì – venerdì: 08:00 – 18:00\nSabato: 10:00 – 14:00",
+    address: "KSAG Insurance GmbH\nIndustriestrasse 14\n8305 Dietlikon\nSvizzera",
+    phone: "+41 79 138 53 36",
+    email: "info@ksaggmbh.ch",
     send: "Invia",
     success: "Grazie — richiesta inviata (demo).",
     required: "Obbligatorio",
@@ -39,7 +39,7 @@ export const it: Dictionary = {
     welcomeTitle: "Benvenuti da KSAG",
     welcomeBody: [
       "KSAG è un broker assicurativo indipendente che collabora con compagnie leader.",
-      "Come fornitore autorizzato vi aiutiamo a trovare la copertura adeguata.",
+      "Dal 2017 consigliamo in modo indipendente da Dietlikon su assicurazioni, previdenza e pianificazione finanziaria.",
       "Confrontiamo i prodotti, spieghiamo pro e contro e restiamo il vostro unico referente.",
     ],
     servicesTitle: "Servizi per la tranquillità della vostra vita",
@@ -60,11 +60,10 @@ export const it: Dictionary = {
   },
   about: {
     title: "Chi siamo",
-    lead: "Broker indipendente con focus su consulenza chiara e assistenza duratura.",
+    lead: "Consulenza indipendente su assicurazioni e previdenza nella regione di Zurigo.",
     body: [
-      "KSAG Insurance è un broker indipendente. Tra i nostri partner ci sono compagnie svizzere leader.",
-      "Confrontiamo i prodotti e consuliamo in modo trasparente — un solo referente per tutti i contratti.",
-      "I nostri collaboratori sono formati, autorizzati e registrati secondo le norme vigenti.",
+      "KSAG Insurance GmbH consiglia dal 2017, da Dietlikon, in modo indipendente su assicurazioni, previdenza e pianificazione finanziaria.",
+      "Confrontiamo i prodotti per privati e aziende e spieghiamo vantaggi e svantaggi. Una sola persona resta il vostro referente per tutti i contratti.",
     ],
     partnersTitle: "Cosa dicono i partner",
     quotes: [
@@ -350,20 +349,20 @@ export const it: Dictionary = {
     privacy: "Privacy",
     terms: "CG",
     imprint: "Impressum",
-    rights: "© 2026 KSAG Insurance. Tutti i diritti riservati.",
+    rights: "© 2026 KSAG Insurance GmbH. Tutti i diritti riservati.",
   },
   privacy: {
     title: "Informativa sulla privacy",
     lead:
       "Proteggiamo i dati personali secondo la LPD svizzera e, se applicabile, il GDPR dell’UE.",
-    updated: "Aggiornato: novembre 2026 (contenuto demo)",
+    updated: "Aggiornato: novembre 2026",
     disclaimer:
-      "Questo testo è un modello demo per KSAG Insurance e non sostituisce una consulenza legale. Fatelo verificare prima del go-live.",
+      "Questo testo descrive il trattamento dei dati di KSAG Insurance GmbH e non sostituisce una consulenza legale.",
     sections: [
       {
         title: "1. Titolare",
         body:
-          "Il titolare del trattamento è KSAG Insurance (demo), Bahnhofstrasse 12, 8001 Zurigo, Svizzera. Contatto: hello@ksag-insurance.ch, tel. +41 44 123 45 67.",
+          "Il titolare del trattamento è KSAG Insurance GmbH, Industriestrasse 14, 8305 Dietlikon, Svizzera. Contatto: info@ksaggmbh.ch, tel. +41 79 138 53 36.",
       },
       {
         title: "2. Dati trattati",
@@ -393,7 +392,7 @@ export const it: Dictionary = {
       {
         title: "5. Destinatari",
         body:
-          "Comunicazione solo se necessaria, con consenso o obbligo di legge. Destinatari possibili (demo): hosting/IT, assicuratori in caso di intermediazione, WhatsApp/Meta.",
+          "Comunicazione solo se necessaria, con consenso o obbligo di legge. Destinatari possibili: hosting/IT, assicuratori in caso di intermediazione, WhatsApp/Meta.",
       },
       {
         title: "6. Conservazione",
@@ -431,34 +430,49 @@ export const it: Dictionary = {
       {
         title: "11. Contatto privacy",
         body:
-          "Scrivete a hello@ksag-insurance.ch o usate il modulo di contatto.",
+          "Scrivete a info@ksaggmbh.ch o usate il modulo di contatto.",
       },
     ],
   },
   imprint: {
     title: "Impressum",
-    lead: "Informazioni aziendali (demo).",
+    lead: "Informazioni su KSAG Insurance GmbH.",
     sections: [
       {
         title: "Azienda",
         bullets: [
-          "KSAG Insurance (demo)",
-          "Bahnhofstrasse 12",
-          "8001 Zurigo",
+          "KSAG Insurance GmbH",
+          "Società a garanzia limitata (GmbH)",
+          "Industriestrasse 14",
+          "8305 Dietlikon",
           "Svizzera",
+        ],
+      },
+      {
+        title: "Registro di commercio",
+        bullets: [
+          "IDI: CHE-470.839.062",
+          "N. RC: CH-020.4.060.855-4",
+          "Registro di commercio del Cantone di Zurigo",
+          "Iscrizione: 1° marzo 2017",
+          "Capitale sociale: CHF 20'000",
+        ],
+      },
+      {
+        title: "Direzione",
+        bullets: [
+          "Granit Delija, socio e presidente della direzione, firma individuale",
+          "Adem Delija, direttore, firma individuale",
         ],
       },
       {
         title: "Contatto",
         bullets: [
-          "E-mail: hello@ksag-insurance.ch",
-          "Telefono: +41 44 123 45 67",
+          "E-mail: info@ksaggmbh.ch",
+          "Telefono: +41 79 138 53 36",
+          "Lunedì–venerdì: 08:00–18:00",
+          "Sabato: 10:00–14:00",
         ],
-      },
-      {
-        title: "Nota",
-        body:
-          "Impressum demo da sostituire con dati reali e IDE prima della produzione.",
       },
     ],
   },
