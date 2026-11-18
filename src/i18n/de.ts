@@ -21,6 +21,11 @@ export const de: Dictionary = {
     hours: "Montag – Freitag: 08:00 – 18:00\nSamstag: 10:00 – 14:00",
     address: "KSAG Insurance GmbH\nIndustriestrasse 14\n8305 Dietlikon\nSchweiz",
     phone: "+41 79 138 53 36",
+    phones: [
+      { label: "Mobil", number: "+41 79 138 53 36" },
+      { label: "Festnetz", number: "+41 43 819 19 91" },
+      { label: "Mobil", number: "+41 79 759 73 14" },
+    ],
     email: "info@ksaggmbh.ch",
     send: "Absenden",
     success: "Danke — Ihre Anfrage wurde übermittelt (Demo).",
@@ -37,6 +42,9 @@ export const de: Dictionary = {
     heroSecondary: "Privatkunden entdecken",
     welcomeEyebrow: "Willkommen",
     welcomeTitle: "Willkommen bei KSAG",
+    portraitName: "Adem Delija",
+    portraitRole: "Geschäftsführer · Dietlikon",
+    portraitAlt: "Adem Delija, Geschäftsführer der KSAG Insurance GmbH, im Büro in Dietlikon",
     welcomeBody: [
       "KSAG ist ein unabhängiger Versicherungsmakler und arbeitet mit führenden Versicherungsgesellschaften zusammen.",
       "Seit 2017 beraten wir von Dietlikon aus unabhängig zu Versicherungen, Vorsorge und Finanzplanung.",
@@ -59,6 +67,10 @@ export const de: Dictionary = {
       "Unfallversicherung",
       "Kollektive Krankentaggeldversicherung",
     ],
+    visitEyebrow: "Büro",
+    visitTitle: "Persönlich in Dietlikon",
+    visitLead:
+      "Beratung an der Industriestrasse 14. Die Karte zeigt den Sitz der KSAG Insurance GmbH.",
   },
   about: {
     title: "Über uns",
@@ -67,26 +79,74 @@ export const de: Dictionary = {
     body: [
       "Die KSAG Insurance GmbH berät seit 2017 von Dietlikon aus unabhängig zu Versicherungen, Vorsorge und Finanzplanung.",
       "Wir vergleichen Produkte für Privat- und Firmenkunden und erklären Vor- und Nachteile. So bleibt eine Ansprechperson für alle Verträge.",
+      "Das erste Beratungsgespräch ist kostenlos — für Privatpersonen und Unternehmen.",
     ],
-    partnersTitle: "Was Partner über uns sagen",
+    valuesTitle: "Unsere Werte",
+    values: [
+      {
+        title: "Professionalismus",
+        text: "Vorbildliches Verhalten, eine klare Haltung und hohe ethische Standards.",
+      },
+      {
+        title: "Integrität",
+        text: "Verlässlichkeit in jedem Teil der Beratung.",
+      },
+      {
+        title: "Service",
+        text: "Zufriedenheit durch sorgfältige Betreuung und eine Lösung, die zum Ziel passt.",
+      },
+      {
+        title: "Verpflichtung",
+        text: "Ein Gespräch, das sich am Bedarf der Kundin oder des Kunden ausrichtet.",
+      },
+    ],
+    topicsTitle: "Weitere Themen",
+    topicsLead:
+      "Diese Themen gehören ebenfalls zur Beratung. Sprechen Sie uns darauf an.",
+    topics: [
+      "Buchhaltung",
+      "Rechtsberatung",
+      "Unternehmensberatung",
+      "Liegenschaften",
+      "Sponsoring",
+      "Jobs und Karriere",
+    ],
+    partnersTitle: "Was Kunden sagen",
     quotes: [
       {
         quote:
-          "Sehr gute Zusammenarbeit. KSAG arbeitet unabhängig und mit unterschiedlichen Gesellschaften zusammen.",
-        name: "Partnerstimme",
-        role: "Versicherungsgesellschaft",
+          "Danke für die tolle und sehr kompetente Beratung. Wir konnten durch die Finanz- und Vorsorgeberatung von KSAG Insurance viel Geld sparen.",
+        name: "Kundin oder Kunde",
+        role: "Finanz- und Vorsorgeberatung",
       },
       {
         quote:
-          "Seriös, erreichbar und lösungsorientiert — auch wenn Kunden ein Problem haben.",
-        name: "Partnerstimme",
-        role: "Versicherungsgesellschaft",
+          "Mein Berater Adem ist der Beste. Er ist professionell, hat immer eine Antwort und reagiert schnell auf E-Mails und Anrufe. Deshalb bleibe ich Kunde. Die Preise für meinen Versicherungsschutz stimmen auch.",
+        name: "Kundin oder Kunde",
+        role: "Versicherung",
       },
       {
         quote:
-          "Hohes Niveau in Beratung und Betreuung. Die Zusammenarbeit funktioniert zuverlässig.",
-        name: "Partnerstimme",
-        role: "Versicherungsgesellschaft",
+          "Dass man durch eine kompetente Beratung so viel Geld sparen kann, hätten wir nie gedacht.",
+        name: "Kundin oder Kunde",
+        role: "Beratung",
+      },
+      {
+        quote:
+          "Wir sind vor vielen Jahren zu KSAG Insurance gewechselt, und Adem hat sich immer um alle unsere Anliegen gekümmert. Er war ehrlich, fair und bei jeder Anfrage auf dem aktuellen Stand. Wir empfehlen ihn sehr.",
+        name: "Kundin oder Kunde",
+        role: "Langjährige Kundschaft",
+      },
+      {
+        quote: "Herr Adem Delija ist immer für uns da, sogar in den Ferien.",
+        name: "Kundin oder Kunde",
+        role: "Erreichbarkeit",
+      },
+      {
+        quote:
+          "Ich arbeite privat und beruflich mit KSAG Insurance. Ich bekomme schnellen Service und schnelle Antworten, auch wenn das Büro geschlossen ist. Herr Adem nimmt seine Arbeit ernst und bietet zusammen mit seinem Team einen hervorragenden Service.",
+        name: "Kundin oder Kunde",
+        role: "Privat und beruflich",
       },
     ],
   },
@@ -249,6 +309,20 @@ export const de: Dictionary = {
         ],
       },
       {
+        slug: "lebensversicherung",
+        title: "Lebensversicherung",
+        short: "Kapitalbildend für das Alter sparen.",
+        lead:
+          "Eine kapitalbildende Lebensversicherung gibt die Möglichkeit, für das Alter zu sparen und gleichzeitig versichert zu sein.",
+        sections: [
+          {
+            title: "Private Vorsorge",
+            body:
+              "Im Rahmen der privaten Vorsorge sind solche Policen kapitalbildend. Je nach Produkt kann ein Steuervorteil dazugehören.",
+          },
+        ],
+      },
+      {
         slug: "vorsorge",
         title: "Vorsorge",
         short: "Individuelle Altersvorsorge für Ihren Lebensstandard.",
@@ -256,9 +330,42 @@ export const de: Dictionary = {
           "Langlebigkeit und Demografie fordern die Rentensysteme. Wir helfen Ihnen, die individuelle Vorsorge zu optimieren.",
         sections: [
           {
+            title: "Drei Säulen",
+            body:
+              "AHV und IV bilden die erste Säule. Die berufliche Vorsorge und die private Vorsorge, Säule 3a und 3b, ergänzen sie.",
+          },
+          {
             title: "Unsere Begleitung",
             body:
               "Gemeinsam erarbeiten wir eine Lösung nach Ihren Bedürfnissen — klar verglichen und verständlich erklärt.",
+          },
+        ],
+      },
+      {
+        slug: "kredite-und-hypotheken",
+        title: "Kredite und Hypotheken",
+        short: "Privat-, Auto- und Baukredit sowie Hypotheken.",
+        lead:
+          "KSAG vergleicht als unabhängiger Finanzierungspartner Angebote auf dem Schweizer Kreditmarkt und sucht eine Lösung, die zum Budget passt.",
+        sections: [
+          {
+            title: "Welche Finanzierungen",
+            bullets: [
+              "Privatkredit",
+              "Autokredit",
+              "Baukredit",
+              "Hypotheken",
+              "Kredit mit Ratenversicherung",
+            ],
+          },
+          {
+            title: "Übliche Voraussetzungen",
+            bullets: [
+              "Regelmässiges monatliches Einkommen",
+              "Alter zwischen 18 und 65 Jahren",
+              "Wohnsitz in der Schweiz, Schweizer Bürgerrecht oder Ausweis B oder C",
+              "Keine Betreibungen, Pfändungen oder Verlustscheine",
+            ],
           },
         ],
       },
@@ -312,6 +419,7 @@ export const de: Dictionary = {
               "Heilungskosten",
               "Spitalaufenthalt",
               "Invaliden- und Hinterlassenenrenten",
+              "UVG-Zusatz",
             ],
           },
         ],
@@ -340,9 +448,9 @@ export const de: Dictionary = {
           {
             title: "Typische Themen",
             bullets: [
-              "Betriebshaftpflicht",
-              "Sach- und Inventarversicherung",
-              "Weitere betriebsrelevante Deckungen",
+              "Betriebshaftpflicht und Berufshaftpflicht",
+              "Sach-, Inventar- und Transportversicherung",
+              "Motorfahrzeugflotte",
             ],
           },
         ],
@@ -356,6 +464,7 @@ export const de: Dictionary = {
     body: [
       "Kaum beginnt das Jahr, steht die Steuererklärung vor der Tür. Viele Steuerpflichtige sind unsicher, ob alle Abzüge korrekt vorgenommen wurden.",
       "Wir ergänzen und optimieren die Steuererklärung, prüfen den Einschätzungsentscheid und verfassen bei Bedarf eine Einsprache.",
+      "Ein erstes Gespräch ist kostenlos.",
     ],
     pricingTitle: "Kosten (Demo-Preise)",
     pricing: [
@@ -418,6 +527,9 @@ export const de: Dictionary = {
     ],
     message: "Nachricht",
     infoTitle: "Kontaktdaten",
+    mapTitle: "Büro in Dietlikon",
+    mapOpen: "In Google Maps öffnen",
+    mapNote: "Die Karte zeigt Industriestrasse 14 und wird von Google Maps geladen.",
   },
   footer: {
     tagline: "Unabhängiger Schweizer Versicherungsmakler.",
@@ -450,6 +562,7 @@ export const de: Dictionary = {
           "Technische Daten (IP-Adresse, Browser, Gerät, Zeitpunkt des Zugriffs)",
           "Cookie- und Einwilligungspräferenzen",
           "Bei WhatsApp-Kontakt: die von Ihnen übermittelten Chat-Inhalte gemäss WhatsApp-/Meta-Bedingungen",
+          "Beim Laden der Karte auf der Kontaktseite: technische Daten, die Google Maps erhält (z. B. IP-Adresse)",
         ],
       },
       {
@@ -469,7 +582,7 @@ export const de: Dictionary = {
       {
         title: "5. Weitergabe an Dritte",
         body:
-          "Eine Weitergabe erfolgt nur, wenn dies für die genannten Zwecke erforderlich ist, Sie eingewilligt haben oder eine gesetzliche Pflicht besteht. Mögliche Empfänger: Hosting-Anbieter, IT-Dienstleister, Versicherer im Rahmen einer konkreten Vermittlung, sowie WhatsApp/Meta bei Nutzung des WhatsApp-Kanals.",
+          "Eine Weitergabe erfolgt nur, wenn dies für die genannten Zwecke erforderlich ist, Sie eingewilligt haben oder eine gesetzliche Pflicht besteht. Mögliche Empfänger: Hosting-Anbieter, IT-Dienstleister, Versicherer im Rahmen einer konkreten Vermittlung, WhatsApp/Meta bei Nutzung des WhatsApp-Kanals, sowie Google beim Laden der Karte.",
       },
       {
         title: "6. Speicherdauer",
@@ -546,7 +659,9 @@ export const de: Dictionary = {
         title: "Kontakt",
         bullets: [
           "E-Mail: info@ksaggmbh.ch",
-          "Telefon: +41 79 138 53 36",
+          "Mobil: +41 79 138 53 36",
+          "Festnetz: +41 43 819 19 91",
+          "Mobil: +41 79 759 73 14",
           "Montag–Freitag: 08:00–18:00",
           "Samstag: 10:00–14:00",
         ],
@@ -563,7 +678,18 @@ export const de: Dictionary = {
   },
   whatsappLabel: "Chat auf WhatsApp",
   trust: {
-    label: "Partnergesellschaften & Regionen",
-    items: ["Zürich", "Bern", "Genève", "Lugano", "Basel", "Lausanne"],
+    label: "Beratung",
+    stats: [
+      { value: "164", label: "Firmen und Partner" },
+      { value: "1'700", label: "Kunden und Kontakte" },
+      { value: "1'200", label: "Bisherige Treffen" },
+    ],
+    items: [
+      "Krankenversicherung",
+      "Vorsorge",
+      "Motor und Hausrat",
+      "Kredite und Hypotheken",
+      "Firmenkunden",
+    ],
   },
 };

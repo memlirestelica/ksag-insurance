@@ -14,7 +14,14 @@ export function Footer() {
             <p className="footer-contact">
               {t.common.address}
               {"\n"}
-              <a href={`tel:${t.common.phone.replace(/\s/g, "")}`}>{t.common.phone}</a>
+              {t.common.phones.map((item) => (
+                <span key={item.number}>
+                  {"\n"}
+                  <a href={`tel:${item.number.replace(/\s/g, "")}`}>
+                    {item.label} {item.number}
+                  </a>
+                </span>
+              ))}
               {"\n"}
               <a href={`mailto:${t.common.email}`}>{t.common.email}</a>
             </p>

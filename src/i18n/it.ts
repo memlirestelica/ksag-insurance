@@ -21,6 +21,11 @@ export const it: Dictionary = {
     hours: "Lunedì – venerdì: 08:00 – 18:00\nSabato: 10:00 – 14:00",
     address: "KSAG Insurance GmbH\nIndustriestrasse 14\n8305 Dietlikon\nSvizzera",
     phone: "+41 79 138 53 36",
+    phones: [
+      { label: "Cellulare", number: "+41 79 138 53 36" },
+      { label: "Fisso", number: "+41 43 819 19 91" },
+      { label: "Cellulare", number: "+41 79 759 73 14" },
+    ],
     email: "info@ksaggmbh.ch",
     send: "Invia",
     success: "Grazie — richiesta inviata (demo).",
@@ -37,6 +42,9 @@ export const it: Dictionary = {
     heroSecondary: "Scopri i privati",
     welcomeEyebrow: "Benvenuti",
     welcomeTitle: "Benvenuti da KSAG",
+    portraitName: "Adem Delija",
+    portraitRole: "Direttore · Dietlikon",
+    portraitAlt: "Adem Delija, direttore di KSAG Insurance GmbH, nell'ufficio di Dietlikon",
     welcomeBody: [
       "KSAG è un broker assicurativo indipendente che collabora con compagnie leader.",
       "Dal 2017 consigliamo in modo indipendente da Dietlikon su assicurazioni, previdenza e pianificazione finanziaria.",
@@ -57,6 +65,10 @@ export const it: Dictionary = {
       "Assicurazione infortuni",
       "Indennità giornaliera malattia collettiva",
     ],
+    visitEyebrow: "Ufficio",
+    visitTitle: "Di persona a Dietlikon",
+    visitLead:
+      "Consulenza in Industriestrasse 14. La mappa indica la sede di KSAG Insurance GmbH.",
   },
   about: {
     title: "Chi siamo",
@@ -64,23 +76,70 @@ export const it: Dictionary = {
     body: [
       "KSAG Insurance GmbH consiglia dal 2017, da Dietlikon, in modo indipendente su assicurazioni, previdenza e pianificazione finanziaria.",
       "Confrontiamo i prodotti per privati e aziende e spieghiamo vantaggi e svantaggi. Una sola persona resta il vostro referente per tutti i contratti.",
+      "Il primo colloquio è gratuito, per privati e aziende.",
     ],
-    partnersTitle: "Cosa dicono i partner",
+    valuesTitle: "I nostri valori",
+    values: [
+      {
+        title: "Professionalità",
+        text: "Un comportamento esemplare, un atteggiamento chiaro e standard etici alti.",
+      },
+      { title: "Integrità", text: "Affidabilità in ogni parte della consulenza." },
+      {
+        title: "Servizio",
+        text: "Soddisfazione grazie a un’assistenza accurata e a una soluzione adatta all’obiettivo.",
+      },
+      {
+        title: "Impegno",
+        text: "Un colloquio costruito sul bisogno del cliente.",
+      },
+    ],
+    topicsTitle: "Altri temi",
+    topicsLead:
+      "Anche questi temi fanno parte della consulenza. Chiedeteci pure.",
+    topics: [
+      "Contabilità",
+      "Consulenza legale",
+      "Consulenza aziendale",
+      "Immobili",
+      "Sponsorizzazioni",
+      "Lavoro e carriera",
+    ],
+    partnersTitle: "Cosa dicono i clienti",
     quotes: [
       {
-        quote: "Ottima collaborazione. KSAG lavora in modo indipendente con diverse compagnie.",
-        name: "Voce partner",
-        role: "Assicuratore",
+        quote:
+          "Grazie per la consulenza eccellente e competente. La consulenza finanziaria e previdenziale di KSAG Insurance ci ha fatto risparmiare molto.",
+        name: "Cliente",
+        role: "Finanza e previdenza",
       },
       {
-        quote: "Seri, raggiungibili e orientati alle soluzioni quando i clienti hanno bisogno.",
-        name: "Voce partner",
-        role: "Assicuratore",
+        quote:
+          "Il mio consulente Adem è il migliore. È professionale, ha sempre una risposta e reagisce in fretta a e-mail e telefonate. Per questo resto cliente. Anche i prezzi della copertura sono giusti.",
+        name: "Cliente",
+        role: "Assicurazione",
       },
       {
-        quote: "Consulenza di alto livello e collaborazione affidabile.",
-        name: "Voce partner",
-        role: "Assicuratore",
+        quote: "Non avremmo mai pensato che una consulenza competente facesse risparmiare così tanto.",
+        name: "Cliente",
+        role: "Consulenza",
+      },
+      {
+        quote:
+          "Siamo passati a KSAG Insurance molti anni fa, e Adem si è sempre occupato di tutto. È stato onesto, corretto e aggiornato a ogni richiesta. Lo consigliamo vivamente.",
+        name: "Cliente",
+        role: "Clientela di lunga data",
+      },
+      {
+        quote: "Il signor Adem Delija c’è sempre per noi, anche in vacanza.",
+        name: "Cliente",
+        role: "Reperibilità",
+      },
+      {
+        quote:
+          "Lavoro con KSAG Insurance in privato e per l’azienda. Ricevo sempre un servizio e risposte rapide, anche a ufficio chiuso. Il signor Adem prende il lavoro sul serio, e così il suo team.",
+        name: "Cliente",
+        role: "Privato e professionale",
       },
     ],
   },
@@ -197,14 +256,57 @@ export const it: Dictionary = {
         ],
       },
       {
+        slug: "lebensversicherung",
+        title: "Assicurazione sulla vita",
+        short: "Risparmiare per la pensione con una polizza di capitale.",
+        lead: "Un’assicurazione sulla vita a capitale permette di risparmiare per l’età e di restare assicurati allo stesso tempo.",
+        sections: [
+          {
+            title: "Previdenza privata",
+            body: "Nella previdenza privata queste polizze costituiscono un capitale. A seconda del prodotto può esserci un vantaggio fiscale.",
+          },
+        ],
+      },
+      {
         slug: "vorsorge",
         title: "Previdenza",
         short: "Previdenza individuale per il vostro tenore di vita.",
         lead: "Longevità e demografia sfidano i sistemi pensionistici. Ottimizziamo la vostra previdenza.",
         sections: [
           {
+            title: "Tre pilastri",
+            body: "AVS e AI sono il primo pilastro. La previdenza professionale e quella privata, pilastri 3a e 3b, li completano.",
+          },
+          {
             title: "Il nostro accompagnamento",
             body: "Una soluzione secondo le vostre esigenze — confrontata e spiegata con chiarezza.",
+          },
+        ],
+      },
+      {
+        slug: "kredite-und-hypotheken",
+        title: "Crediti e ipoteche",
+        short: "Credito privato, auto e di costruzione, oltre alle ipoteche.",
+        lead: "Come partner di finanziamento indipendente, KSAG confronta le offerte del mercato svizzero del credito e cerca una soluzione adatta al budget.",
+        sections: [
+          {
+            title: "Quali finanziamenti",
+            bullets: [
+              "Credito privato",
+              "Credito auto",
+              "Credito di costruzione",
+              "Ipoteche",
+              "Credito con assicurazione delle rate",
+            ],
+          },
+          {
+            title: "Requisiti abituali",
+            bullets: [
+              "Reddito mensile regolare",
+              "Età tra 18 e 65 anni",
+              "Domicilio in Svizzera, cittadinanza svizzera o permesso B o C",
+              "Nessuna esecuzione, pignoramento o attestato di carenza beni",
+            ],
           },
         ],
       },
@@ -246,7 +348,7 @@ export const it: Dictionary = {
           },
           {
             title: "Prestazioni",
-            bullets: ["Indennità giornaliera", "Costi di cura", "Ricovero", "Rendite"],
+            bullets: ["Indennità giornaliera", "Costi di cura", "Ricovero", "Rendite", "Complementare LAINF"],
           },
         ],
       },
@@ -270,7 +372,7 @@ export const it: Dictionary = {
         sections: [
           {
             title: "Temi tipici",
-            bullets: ["RC aziendale", "Cose e inventario", "Altre coperture operative"],
+            bullets: ["RC aziendale e RC professionale", "Cose, inventario e trasporti", "Flotta veicoli"],
           },
         ],
       },
@@ -282,6 +384,7 @@ export const it: Dictionary = {
     body: [
       "La dichiarazione fiscale arriva presto ogni anno. Molti temono di aver dimenticato deduzioni.",
       "Completiamo e ottimizziamo la dichiarazione, verifichiamo la tassazione e redigiamo un’opposizione se serve.",
+      "Un primo colloquio è gratuito.",
     ],
     pricingTitle: "Costi (demo)",
     pricing: [
@@ -341,6 +444,9 @@ export const it: Dictionary = {
     ],
     message: "Messaggio",
     infoTitle: "Dati di contatto",
+    mapTitle: "Ufficio a Dietlikon",
+    mapOpen: "Apri in Google Maps",
+    mapNote: "La mappa indica Industriestrasse 14 ed è caricata da Google Maps.",
   },
   footer: {
     tagline: "Broker assicurativo svizzero indipendente.",
@@ -373,6 +479,7 @@ export const it: Dictionary = {
           "Dati tecnici (IP, browser, dispositivo, orario)",
           "Preferenze cookie / consenso",
           "Via WhatsApp: contenuti inviati secondo i termini Meta/WhatsApp",
+          "Al caricamento della mappa nella pagina contatti: dati tecnici ricevuti da Google Maps (ad es. indirizzo IP)",
         ],
       },
       {
@@ -392,7 +499,7 @@ export const it: Dictionary = {
       {
         title: "5. Destinatari",
         body:
-          "Comunicazione solo se necessaria, con consenso o obbligo di legge. Destinatari possibili: hosting/IT, assicuratori in caso di intermediazione, WhatsApp/Meta.",
+          "Comunicazione solo se necessaria, con consenso o obbligo di legge. Destinatari possibili: hosting/IT, assicuratori in caso di intermediazione, WhatsApp/Meta e Google al caricamento della mappa.",
       },
       {
         title: "6. Conservazione",
@@ -469,7 +576,9 @@ export const it: Dictionary = {
         title: "Contatto",
         bullets: [
           "E-mail: info@ksaggmbh.ch",
-          "Telefono: +41 79 138 53 36",
+          "Cellulare: +41 79 138 53 36",
+          "Fisso: +41 43 819 19 91",
+          "Cellulare: +41 79 759 73 14",
           "Lunedì–venerdì: 08:00–18:00",
           "Sabato: 10:00–14:00",
         ],
@@ -486,7 +595,18 @@ export const it: Dictionary = {
   },
   whatsappLabel: "Chat su WhatsApp",
   trust: {
-    label: "Partner e regioni",
-    items: ["Zurigo", "Berna", "Ginevra", "Lugano", "Basilea", "Losanna"],
+    label: "Consulenza",
+    stats: [
+      { value: "164", label: "Aziende e partner" },
+      { value: "1'700", label: "Clienti e contatti" },
+      { value: "1'200", label: "Incontri svolti" },
+    ],
+    items: [
+      "Assicurazione malattia",
+      "Previdenza",
+      "Veicoli e casa",
+      "Crediti e ipoteche",
+      "Aziende",
+    ],
   },
 };

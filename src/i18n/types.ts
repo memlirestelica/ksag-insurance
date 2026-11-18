@@ -35,6 +35,7 @@ export type Dictionary = {
     hours: string;
     address: string;
     phone: string;
+    phones: { label: string; number: string }[];
     email: string;
     send: string;
     success: string;
@@ -51,6 +52,9 @@ export type Dictionary = {
     welcomeEyebrow: string;
     welcomeTitle: string;
     welcomeBody: string[];
+    portraitName: string;
+    portraitRole: string;
+    portraitAlt: string;
     servicesTitle: string;
     privateCardTitle: string;
     privateCardBody: string;
@@ -61,11 +65,19 @@ export type Dictionary = {
     staffTitle: string;
     staffBody: string;
     staffItems: string[];
+    visitEyebrow: string;
+    visitTitle: string;
+    visitLead: string;
   };
   about: {
     title: string;
     lead: string;
     body: string[];
+    valuesTitle: string;
+    values: { title: string; text: string }[];
+    topicsTitle: string;
+    topicsLead: string;
+    topics: string[];
     partnersTitle: string;
     quotes: { quote: string; name: string; role: string }[];
   };
@@ -136,6 +148,9 @@ export type Dictionary = {
     topics: string[];
     message: string;
     infoTitle: string;
+    mapTitle: string;
+    mapOpen: string;
+    mapNote: string;
   };
   footer: {
     tagline: string;
@@ -166,5 +181,9 @@ export type Dictionary = {
     link: string;
   };
   whatsappLabel: string;
-  trust: { label: string; items: string[] };
+  trust: {
+    label: string;
+    stats: { value: string; label: string }[];
+    items: string[];
+  };
 };

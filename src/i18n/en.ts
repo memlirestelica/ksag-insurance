@@ -21,6 +21,11 @@ export const en: Dictionary = {
     hours: "Monday – Friday: 08:00 – 18:00\nSaturday: 10:00 – 14:00",
     address: "KSAG Insurance GmbH\nIndustriestrasse 14\n8305 Dietlikon\nSwitzerland",
     phone: "+41 79 138 53 36",
+    phones: [
+      { label: "Mobile", number: "+41 79 138 53 36" },
+      { label: "Landline", number: "+41 43 819 19 91" },
+      { label: "Mobile", number: "+41 79 759 73 14" },
+    ],
     email: "info@ksaggmbh.ch",
     send: "Send",
     success: "Thanks — your request was sent (demo).",
@@ -37,6 +42,9 @@ export const en: Dictionary = {
     heroSecondary: "Explore private cover",
     welcomeEyebrow: "Welcome",
     welcomeTitle: "Welcome to KSAG",
+    portraitName: "Adem Delija",
+    portraitRole: "Managing director · Dietlikon",
+    portraitAlt: "Adem Delija, managing director of KSAG Insurance GmbH, in the Dietlikon office",
     welcomeBody: [
       "KSAG is an independent insurance broker working with leading insurers.",
       "Since 2017 we have advised independently from Dietlikon on insurance, pensions and financial planning.",
@@ -57,6 +65,9 @@ export const en: Dictionary = {
       "Accident insurance",
       "Collective daily sickness benefits",
     ],
+    visitEyebrow: "Office",
+    visitTitle: "Meet us in Dietlikon",
+    visitLead: "Advice at Industriestrasse 14. The map marks the KSAG Insurance GmbH office.",
   },
   about: {
     title: "About us",
@@ -64,23 +75,70 @@ export const en: Dictionary = {
     body: [
       "KSAG Insurance GmbH has advised independently on insurance, pensions and financial planning from Dietlikon since 2017.",
       "We compare products for private and business clients and explain the trade-offs, so one person remains your contact for every policy.",
+      "The first consultation is free, for private clients and companies.",
     ],
-    partnersTitle: "What partners say",
+    valuesTitle: "Our values",
+    values: [
+      {
+        title: "Professionalism",
+        text: "Conduct by example, a clear attitude and high ethical standards.",
+      },
+      { title: "Integrity", text: "Reliability in every part of the advice." },
+      {
+        title: "Service",
+        text: "Satisfaction through careful support and a solution that fits the goal.",
+      },
+      {
+        title: "Commitment",
+        text: "A conversation shaped around what the client actually needs.",
+      },
+    ],
+    topicsTitle: "Further topics",
+    topicsLead:
+      "These topics are part of the advice as well. Ask us about them.",
+    topics: [
+      "Bookkeeping",
+      "Legal advice",
+      "Business consulting",
+      "Property",
+      "Sponsoring",
+      "Jobs and careers",
+    ],
+    partnersTitle: "What clients say",
     quotes: [
       {
-        quote: "Excellent cooperation. KSAG works independently with multiple insurers.",
-        name: "Partner voice",
-        role: "Insurer",
+        quote:
+          "Thank you for the excellent, competent advice. The financial and pension advice from KSAG Insurance saved us a lot of money.",
+        name: "Client",
+        role: "Finance and pensions",
       },
       {
-        quote: "Reliable, reachable and solution-focused when clients need help.",
-        name: "Partner voice",
-        role: "Insurer",
+        quote:
+          "My adviser Adem is the best. He is professional, always has an answer and replies quickly to emails and calls. That is why I stay a client. The prices for my cover are right too.",
+        name: "Client",
+        role: "Insurance",
       },
       {
-        quote: "High-quality advice and dependable collaboration.",
-        name: "Partner voice",
-        role: "Insurer",
+        quote: "We never thought competent advice could save so much money.",
+        name: "Client",
+        role: "Advice",
+      },
+      {
+        quote:
+          "We moved to KSAG Insurance many years ago, and Adem has always looked after everything we needed. He was honest, fair and up to date on every request. We recommend him highly.",
+        name: "Client",
+        role: "Long-standing client",
+      },
+      {
+        quote: "Mr Adem Delija is always there for us, even on holiday.",
+        name: "Client",
+        role: "Availability",
+      },
+      {
+        quote:
+          "I work with KSAG Insurance privately and for my business. I always get fast service and fast answers, even when the office is closed. Mr Adem takes his work seriously, and so does his team.",
+        name: "Client",
+        role: "Private and business",
       },
     ],
   },
@@ -197,14 +255,57 @@ export const en: Dictionary = {
         ],
       },
       {
+        slug: "lebensversicherung",
+        title: "Life insurance",
+        short: "Save for retirement with a savings policy.",
+        lead: "A savings life policy lets you put money aside for retirement and stay insured at the same time.",
+        sections: [
+          {
+            title: "Private provision",
+            body: "Within private provision these policies build capital. Depending on the product, a tax advantage can apply.",
+          },
+        ],
+      },
+      {
         slug: "vorsorge",
         title: "Provision",
         short: "Personal retirement planning for your standard of living.",
         lead: "Longevity and demographics challenge pension systems. We help optimise your private provision.",
         sections: [
           {
+            title: "Three pillars",
+            body: "AHV and IV are the first pillar. Occupational pensions and private provision, pillars 3a and 3b, complete them.",
+          },
+          {
             title: "How we help",
             body: "We build a solution around your needs — clearly compared and explained.",
+          },
+        ],
+      },
+      {
+        slug: "kredite-und-hypotheken",
+        title: "Loans and mortgages",
+        short: "Personal, car and construction loans, plus mortgages.",
+        lead: "As an independent financing partner, KSAG compares offers on the Swiss credit market and looks for one that fits the budget.",
+        sections: [
+          {
+            title: "What we arrange",
+            bullets: [
+              "Personal loan",
+              "Car loan",
+              "Construction loan",
+              "Mortgages",
+              "Loan with instalment insurance",
+            ],
+          },
+          {
+            title: "Usual requirements",
+            bullets: [
+              "Regular monthly income",
+              "Age between 18 and 65",
+              "Resident in Switzerland, Swiss citizenship or permit B or C",
+              "No debt collection, attachments or certificates of loss",
+            ],
           },
         ],
       },
@@ -246,7 +347,7 @@ export const en: Dictionary = {
           },
           {
             title: "Benefits overview",
-            bullets: ["Daily allowance", "Medical costs", "Hospital stay", "Disability and survivors’ pensions"],
+            bullets: ["Daily allowance", "Medical costs", "Hospital stay", "Disability and survivors’ pensions", "Supplementary accident cover"],
           },
         ],
       },
@@ -270,7 +371,7 @@ export const en: Dictionary = {
         sections: [
           {
             title: "Typical topics",
-            bullets: ["Business liability", "Property and inventory", "Other operational covers"],
+            bullets: ["Business and professional liability", "Property, inventory and transport", "Vehicle fleet"],
           },
         ],
       },
@@ -282,6 +383,7 @@ export const en: Dictionary = {
     body: [
       "The tax return arrives fast each year. Many people worry deductions were missed.",
       "We complete and optimise the return, review assessments and file objections when needed.",
+      "A first conversation is free.",
     ],
     pricingTitle: "Fees (demo)",
     pricing: [
@@ -341,6 +443,9 @@ export const en: Dictionary = {
     ],
     message: "Message",
     infoTitle: "Contact details",
+    mapTitle: "Office in Dietlikon",
+    mapOpen: "Open in Google Maps",
+    mapNote: "The map shows Industriestrasse 14 and is loaded from Google Maps.",
   },
   footer: {
     tagline: "Independent Swiss insurance broker.",
@@ -373,6 +478,7 @@ export const en: Dictionary = {
           "Technical data (IP address, browser, device, access time)",
           "Cookie and consent preferences",
           "If you use WhatsApp: chat content you send under WhatsApp/Meta terms",
+          "When the contact-page map loads: technical data received by Google Maps (for example your IP address)",
         ],
       },
       {
@@ -392,7 +498,7 @@ export const en: Dictionary = {
       {
         title: "5. Sharing with third parties",
         body:
-          "We share data only when needed for the stated purposes, with your consent, or where required by law. Possible recipients: hosting/IT providers, insurers in a concrete brokerage case, and WhatsApp/Meta if you use that channel.",
+          "We share data only when needed for the stated purposes, with your consent, or where required by law. Possible recipients: hosting/IT providers, insurers in a concrete brokerage case, WhatsApp/Meta if you use that channel, and Google when the map loads.",
       },
       {
         title: "6. Retention",
@@ -469,7 +575,9 @@ export const en: Dictionary = {
         title: "Contact",
         bullets: [
           "Email: info@ksaggmbh.ch",
-          "Phone: +41 79 138 53 36",
+          "Mobile: +41 79 138 53 36",
+          "Landline: +41 43 819 19 91",
+          "Mobile: +41 79 759 73 14",
           "Monday–Friday: 08:00–18:00",
           "Saturday: 10:00–14:00",
         ],
@@ -486,7 +594,18 @@ export const en: Dictionary = {
   },
   whatsappLabel: "Chat on WhatsApp",
   trust: {
-    label: "Partners & regions",
-    items: ["Zurich", "Bern", "Geneva", "Lugano", "Basel", "Lausanne"],
+    label: "Advice",
+    stats: [
+      { value: "164", label: "Firms and partners" },
+      { value: "1,700", label: "Clients and contacts" },
+      { value: "1,200", label: "Consultations held" },
+    ],
+    items: [
+      "Health insurance",
+      "Pensions",
+      "Motor and household",
+      "Loans and mortgages",
+      "Business clients",
+    ],
   },
 };

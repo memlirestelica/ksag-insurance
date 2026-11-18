@@ -8,10 +8,37 @@ export function AboutPage() {
     <>
       <PageHero title={t.about.title} lead={t.about.lead} />
       <section className="section" style={{ paddingTop: 0 }}>
-        <div className="container prose">
-          {t.about.body.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
+        <div className="container about-intro">
+          <figure className="about-portrait">
+            <img src="/photos/ademi.png" alt={t.home.portraitAlt} />
+            <figcaption>
+              <strong>{t.home.portraitName}</strong>
+              <span>{t.home.portraitRole}</span>
+            </figcaption>
+          </figure>
+          <div className="prose">
+            {t.about.body.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
+        </div>
+        <div className="container prose about-rest">
+          <h2>{t.about.valuesTitle}</h2>
+          <div className="value-grid">
+            {t.about.values.map((item) => (
+              <article className="value-card" key={item.title}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </article>
+            ))}
+          </div>
+          <h2>{t.about.topicsTitle}</h2>
+          <p>{t.about.topicsLead}</p>
+          <ul className="topic-list">
+            {t.about.topics.map((topic) => (
+              <li key={topic}>{topic}</li>
+            ))}
+          </ul>
         </div>
       </section>
       <section className="section testimonials" style={{ paddingTop: 0 }}>

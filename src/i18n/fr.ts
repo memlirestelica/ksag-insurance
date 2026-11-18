@@ -21,6 +21,11 @@ export const fr: Dictionary = {
     hours: "Lundi – vendredi : 08:00 – 18:00\nSamedi : 10:00 – 14:00",
     address: "KSAG Insurance GmbH\nIndustriestrasse 14\n8305 Dietlikon\nSuisse",
     phone: "+41 79 138 53 36",
+    phones: [
+      { label: "Mobile", number: "+41 79 138 53 36" },
+      { label: "Fixe", number: "+41 43 819 19 91" },
+      { label: "Mobile", number: "+41 79 759 73 14" },
+    ],
     email: "info@ksaggmbh.ch",
     send: "Envoyer",
     success: "Merci — demande envoyée (démo).",
@@ -37,6 +42,9 @@ export const fr: Dictionary = {
     heroSecondary: "Découvrir les particuliers",
     welcomeEyebrow: "Bienvenue",
     welcomeTitle: "Bienvenue chez KSAG",
+    portraitName: "Adem Delija",
+    portraitRole: "Directeur · Dietlikon",
+    portraitAlt: "Adem Delija, directeur de KSAG Insurance GmbH, dans le bureau de Dietlikon",
     welcomeBody: [
       "KSAG est un courtier indépendant travaillant avec des assureurs de premier plan.",
       "Depuis 2017, nous conseillons de façon indépendante depuis Dietlikon en assurances, prévoyance et planification financière.",
@@ -57,6 +65,10 @@ export const fr: Dictionary = {
       "Assurance accidents",
       "Indemnité journalière maladie collective",
     ],
+    visitEyebrow: "Bureau",
+    visitTitle: "Rendez-vous à Dietlikon",
+    visitLead:
+      "Conseil à l’Industriestrasse 14. La carte indique le siège de KSAG Insurance GmbH.",
   },
   about: {
     title: "À propos",
@@ -64,23 +76,70 @@ export const fr: Dictionary = {
     body: [
       "KSAG Insurance GmbH conseille depuis 2017, depuis Dietlikon, de façon indépendante en assurances, prévoyance et planification financière.",
       "Nous comparons les produits pour les clients privés et les entreprises et expliquons les avantages et les inconvénients. Une seule personne reste votre interlocuteur pour tous les contrats.",
+      "Le premier entretien est gratuit, pour les particuliers et les entreprises.",
     ],
-    partnersTitle: "Ce que disent les partenaires",
+    valuesTitle: "Nos valeurs",
+    values: [
+      {
+        title: "Professionnalisme",
+        text: "Un comportement exemplaire, une attitude claire et des standards éthiques élevés.",
+      },
+      { title: "Intégrité", text: "De la fiabilité dans chaque partie du conseil." },
+      {
+        title: "Service",
+        text: "De la satisfaction par un suivi soigneux et une solution adaptée à l’objectif.",
+      },
+      {
+        title: "Engagement",
+        text: "Un entretien construit autour du besoin du client.",
+      },
+    ],
+    topicsTitle: "Autres thèmes",
+    topicsLead:
+      "Ces thèmes font aussi partie du conseil. Demandez-nous.",
+    topics: [
+      "Comptabilité",
+      "Conseil juridique",
+      "Conseil aux entreprises",
+      "Immobilier",
+      "Sponsoring",
+      "Emplois et carrière",
+    ],
+    partnersTitle: "Ce que disent les clients",
     quotes: [
       {
-        quote: "Excellente collaboration. KSAG travaille de façon indépendante avec plusieurs assureurs.",
-        name: "Voix partenaire",
-        role: "Assureur",
+        quote:
+          "Merci pour ce conseil excellent et compétent. Le conseil financier et de prévoyance de KSAG Insurance nous a fait économiser beaucoup d’argent.",
+        name: "Cliente ou client",
+        role: "Finance et prévoyance",
       },
       {
-        quote: "Sérieux, joignable et orienté solutions lorsque les clients ont besoin d’aide.",
-        name: "Voix partenaire",
-        role: "Assureur",
+        quote:
+          "Mon conseiller Adem est le meilleur. Il est professionnel, a toujours une réponse et réagit vite aux e-mails et aux appels. C’est pour cela que je reste client. Les prix de ma couverture conviennent aussi.",
+        name: "Cliente ou client",
+        role: "Assurance",
       },
       {
-        quote: "Conseil de haut niveau et collaboration fiable.",
-        name: "Voix partenaire",
-        role: "Assureur",
+        quote: "Nous n’aurions jamais pensé qu’un conseil compétent puisse faire économiser autant.",
+        name: "Cliente ou client",
+        role: "Conseil",
+      },
+      {
+        quote:
+          "Nous sommes passés à KSAG Insurance il y a de nombreuses années, et Adem s’est toujours occupé de tout. Il a été honnête, juste et à jour à chaque demande. Nous le recommandons vivement.",
+        name: "Cliente ou client",
+        role: "Clientèle de longue date",
+      },
+      {
+        quote: "Monsieur Adem Delija est toujours là pour nous, même pendant les vacances.",
+        name: "Cliente ou client",
+        role: "Disponibilité",
+      },
+      {
+        quote:
+          "Je travaille avec KSAG Insurance à titre privé et professionnel. J’obtiens toujours un service et des réponses rapides, même quand le bureau est fermé. Monsieur Adem prend son travail au sérieux, ainsi que son équipe.",
+        name: "Cliente ou client",
+        role: "Privé et professionnel",
       },
     ],
   },
@@ -197,14 +256,57 @@ export const fr: Dictionary = {
         ],
       },
       {
+        slug: "lebensversicherung",
+        title: "Assurance vie",
+        short: "Épargner pour la retraite avec une police de capital.",
+        lead: "Une assurance vie de capital permet d’épargner pour l’âge et de rester assuré en même temps.",
+        sections: [
+          {
+            title: "Prévoyance privée",
+            body: "Dans la prévoyance privée, ces polices constituent un capital. Selon le produit, un avantage fiscal peut s’y ajouter.",
+          },
+        ],
+      },
+      {
         slug: "vorsorge",
         title: "Prévoyance",
         short: "Prévoyance individuelle pour votre niveau de vie.",
         lead: "Longévité et démographie challengent les systèmes de rente. Nous optimisons votre prévoyance.",
         sections: [
           {
+            title: "Trois piliers",
+            body: "L’AVS et l’AI forment le premier pilier. La prévoyance professionnelle et la prévoyance privée, piliers 3a et 3b, les complètent.",
+          },
+          {
             title: "Notre accompagnement",
             body: "Une solution selon vos besoins — clairement comparée et expliquée.",
+          },
+        ],
+      },
+      {
+        slug: "kredite-und-hypotheken",
+        title: "Crédits et hypothèques",
+        short: "Crédit privé, auto et construction, ainsi que des hypothèques.",
+        lead: "Comme partenaire de financement indépendant, KSAG compare les offres du marché suisse du crédit et cherche une solution adaptée au budget.",
+        sections: [
+          {
+            title: "Quels financements",
+            bullets: [
+              "Crédit privé",
+              "Crédit auto",
+              "Crédit de construction",
+              "Hypothèques",
+              "Crédit avec assurance des mensualités",
+            ],
+          },
+          {
+            title: "Conditions habituelles",
+            bullets: [
+              "Revenu mensuel régulier",
+              "Âge entre 18 et 65 ans",
+              "Domicile en Suisse, nationalité suisse ou permis B ou C",
+              "Pas de poursuites, de saisies ou d’actes de défaut de biens",
+            ],
           },
         ],
       },
@@ -246,7 +348,7 @@ export const fr: Dictionary = {
           },
           {
             title: "Prestations",
-            bullets: ["Indemnité journalière", "Frais de soins", "Hospitalisation", "Rentes"],
+            bullets: ["Indemnité journalière", "Frais de soins", "Hospitalisation", "Rentes", "Complément LAA"],
           },
         ],
       },
@@ -270,7 +372,7 @@ export const fr: Dictionary = {
         sections: [
           {
             title: "Thèmes typiques",
-            bullets: ["RC exploitation", "Biens et inventaire", "Autres couvertures opérationnelles"],
+            bullets: ["RC exploitation et RC professionnelle", "Biens, inventaire et transport", "Flotte de véhicules"],
           },
         ],
       },
@@ -282,6 +384,7 @@ export const fr: Dictionary = {
     body: [
       "La déclaration fiscale arrive vite chaque année. Beaucoup craignent d’avoir oublié des déductions.",
       "Nous complétons et optimisons la déclaration, vérifions la taxation et rédigeons une opposition si besoin.",
+      "Un premier entretien est gratuit.",
     ],
     pricingTitle: "Tarifs (démo)",
     pricing: [
@@ -341,6 +444,9 @@ export const fr: Dictionary = {
     ],
     message: "Message",
     infoTitle: "Coordonnées",
+    mapTitle: "Bureau à Dietlikon",
+    mapOpen: "Ouvrir dans Google Maps",
+    mapNote: "La carte indique Industriestrasse 14 et est chargée via Google Maps.",
   },
   footer: {
     tagline: "Courtier d’assurance suisse indépendant.",
@@ -373,6 +479,7 @@ export const fr: Dictionary = {
           "Données techniques (IP, navigateur, appareil, horodatage)",
           "Préférences cookies / consentement",
           "Via WhatsApp : contenus que vous envoyez selon les conditions Meta/WhatsApp",
+          "Au chargement de la carte sur la page contact : données techniques reçues par Google Maps (p. ex. adresse IP)",
         ],
       },
       {
@@ -392,7 +499,7 @@ export const fr: Dictionary = {
       {
         title: "5. Destinataires",
         body:
-          "Transmission uniquement si nécessaire aux finalités, avec consentement ou obligation légale. Destinataires possibles : hébergeur/IT, assureurs en cas de courtage concret, WhatsApp/Meta.",
+          "Transmission uniquement si nécessaire aux finalités, avec consentement ou obligation légale. Destinataires possibles : hébergeur/IT, assureurs en cas de courtage concret, WhatsApp/Meta, et Google au chargement de la carte.",
       },
       {
         title: "6. Durée de conservation",
@@ -469,7 +576,9 @@ export const fr: Dictionary = {
         title: "Contact",
         bullets: [
           "E-mail : info@ksaggmbh.ch",
-          "Téléphone : +41 79 138 53 36",
+          "Mobile : +41 79 138 53 36",
+          "Fixe : +41 43 819 19 91",
+          "Mobile : +41 79 759 73 14",
           "Lundi–vendredi : 08:00–18:00",
           "Samedi : 10:00–14:00",
         ],
@@ -486,7 +595,18 @@ export const fr: Dictionary = {
   },
   whatsappLabel: "Discuter sur WhatsApp",
   trust: {
-    label: "Partenaires et régions",
-    items: ["Zurich", "Berne", "Genève", "Lugano", "Bâle", "Lausanne"],
+    label: "Conseil",
+    stats: [
+      { value: "164", label: "Sociétés et partenaires" },
+      { value: "1 700", label: "Clients et contacts" },
+      { value: "1 200", label: "Entretiens réalisés" },
+    ],
+    items: [
+      "Assurance maladie",
+      "Prévoyance",
+      "Véhicule et ménage",
+      "Crédits et hypothèques",
+      "Entreprises",
+    ],
   },
 };
