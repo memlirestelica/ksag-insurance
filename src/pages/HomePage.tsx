@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { MAPS_LINK, OfficeMap } from "../components/OfficeMap";
 import { TrustBar } from "../components/TrustBar";
 import { useLanguage } from "../i18n/LanguageContext";
 
 const HERO_IMG =
   "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2200&q=80";
-const OFFICE_IMG =
-  "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80";
+const PORTRAIT_IMG = "/photos/ademi.png";
 
 export function HomePage() {
   const { t } = useLanguage();
@@ -69,9 +69,13 @@ export function HomePage() {
 
       <section className="section welcome">
         <div className="container welcome-layout">
-          <div className="welcome-visual">
-            <img src={OFFICE_IMG} alt="" loading="lazy" />
-          </div>
+          <figure className="welcome-visual">
+            <img src={PORTRAIT_IMG} alt={t.home.portraitAlt} />
+            <figcaption className="portrait-caption">
+              <strong>{t.home.portraitName}</strong>
+              <span>{t.home.portraitRole}</span>
+            </figcaption>
+          </figure>
           <div>
             <p className="eyebrow">{t.home.welcomeEyebrow}</p>
             <h2 className="section-title">{t.home.welcomeTitle}</h2>
@@ -123,6 +127,35 @@ export function HomePage() {
             <Link className="btn btn-primary" to="/firmenkunden">
               {t.common.more}
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section visit-band" aria-label={t.home.visitTitle}>
+        <div className="container visit-layout">
+          <OfficeMap className="visit-map" />
+          <div className="visit-card">
+            <div>
+              <p className="eyebrow">{t.home.visitEyebrow}</p>
+              <h2 className="visit-title">{t.home.visitTitle}</h2>
+              <p className="visit-lead">{t.home.visitLead}</p>
+            </div>
+            <div>
+              <p className="visit-address">{t.common.address}</p>
+              <p className="visit-hours">
+                <strong>{t.common.hoursLabel}</strong>
+                <br />
+                {t.common.hours}
+              </p>
+            </div>
+            <div className="visit-actions">
+              <a className="btn btn-primary" href={MAPS_LINK} target="_blank" rel="noreferrer">
+                {t.contact.mapOpen}
+              </a>
+              <Link className="btn btn-ghost" to="/kontakt">
+                {t.nav.contact}
+              </Link>
+            </div>
           </div>
         </div>
       </section>

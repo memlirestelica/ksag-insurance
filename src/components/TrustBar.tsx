@@ -6,8 +6,18 @@ export function TrustBar() {
 
   return (
     <section className="trust-bar" aria-label={t.trust.label}>
-      <div className="container trust-inner">
-        <p className="trust-label">{t.trust.label}</p>
+      <div className="container">
+        <div className="trust-inner">
+          <p className="trust-label">{t.trust.label}</p>
+          <ul className="trust-stats">
+            {t.trust.stats.map((stat) => (
+              <li key={stat.label}>
+                <strong>{stat.value}</strong>
+                <span>{stat.label}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
         <ul className="trust-list">
           {t.trust.items.map((item, index) => (
             <motion.li

@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { ContactAside } from "../components/ContactAside";
+import { MAPS_LINK, OfficeMap } from "../components/OfficeMap";
 import { PageHero } from "../components/PageHero";
 import { useLanguage } from "../i18n/LanguageContext";
 
@@ -56,6 +57,18 @@ export function ContactPage() {
             </button>
           </form>
           <ContactAside />
+        </div>
+        <div className="container office-map">
+          <div className="office-map-head">
+            <div>
+              <h2 className="mini-title">{t.contact.mapTitle}</h2>
+              <p>{t.contact.mapNote}</p>
+            </div>
+            <a className="btn btn-dark" href={MAPS_LINK} target="_blank" rel="noreferrer">
+              {t.contact.mapOpen}
+            </a>
+          </div>
+          <OfficeMap showPlaceCard />
         </div>
       </section>
     </>

@@ -15,9 +15,13 @@ export function ContactAside() {
         <p>
           <a href={`mailto:${t.common.email}`}>{t.common.email}</a>
         </p>
-        <p>
-          <a href={`tel:${t.common.phone.replace(/\s/g, "")}`}>{t.common.phone}</a>
-        </p>
+        {t.common.phones.map((item) => (
+          <p key={item.number}>
+            <a href={`tel:${item.number.replace(/\s/g, "")}`}>
+              {item.label} {item.number}
+            </a>
+          </p>
+        ))}
         <p className="hours-block">
           <strong>{t.common.hoursLabel}</strong>
           <br />
