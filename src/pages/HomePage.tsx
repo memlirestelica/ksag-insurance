@@ -6,7 +6,7 @@ import { useLanguage } from "../i18n/LanguageContext";
 
 const HERO_IMG =
   "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2200&q=80";
-const PORTRAIT_IMG = "/photos/ademi.png";
+const PORTRAIT_IMG = `${import.meta.env.BASE_URL}photos/ademi.png`;
 
 export function HomePage() {
   const { t } = useLanguage();

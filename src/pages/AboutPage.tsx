@@ -10,7 +10,7 @@ export function AboutPage() {
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container about-intro">
           <figure className="about-portrait">
-            <img src="/photos/ademi.png" alt={t.home.portraitAlt} />
+            <img src={`${import.meta.env.BASE_URL}photos/ademi.png`} alt={t.home.portraitAlt} />
             <figcaption>
               <strong>{t.home.portraitName}</strong>
               <span>{t.home.portraitRole}</span>
